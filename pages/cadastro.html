@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        width: 100%;
+        max-width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1 class="h1 mb-3 fw-normal">Informe seus dados</h1>
+      <h3 class="h3 mb-3 fw-normal">Pessoais</h3>
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nome"
+          name="nome"
+          placeholder="Digite seu nome"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="cpf" class="form-label">CPF</label>
+        <input
+          type="number"
+          class="form-control"
+          id="cpf"
+          name="cpf"
+          placeholder="Digite o seu CPF"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="inputEmail" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="inputEmail"
+          placeholder="Digite seu email"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="inputPassword" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="inputPassword" />
+      </div>
+      <div class="mb-3">
+        <label for="inputPassword2" class="form-label">Confirme a senha</label>
+        <input type="password" class="form-control" id="inputPassword2" />
+      </div>
+      <h3 class="h3 mb-3 fw-normal">Empresariais</h3>
+      <div class="mb-3">
+        <label for="nomeEmpresa" class="form-label">Nome da Empresa</label>
+        <input
+          type="number"
+          class="form-control"
+          id="nomeEmpresa"
+          name="nomeEmpresa"
+          placeholder="Digite o nome da sua empresa"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="cnpj" class="form-label">CNPJ</label>
+        <input
+          type="text"
+          class="form-control"
+          id="cnpj"
+          name="cnpj"
+          placeholder="Digite o CNPJ da sua empresa"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="selectFuncao" class="form-label">Função exercida</label>
+        <select class="form-select" id="selectFuncao">
+          <option selected>Escolha</option>
+          <option value="user">Usuário do sistema</option>
+          <option value="adm">Administrador do sistema</option>
+          <option value="gerente">Gerente do sistema</option>
+        </select>
+      </div>
+      <div class="alert alert-warning" role="alert">
+        Administrador/Gerente é necessário o envio do arquivo de comprovação!
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="customFile">Upload</label>
+        <input type="file" class="form-control" id="customFile" />
+      </div>
+
+      
+      <div class="mb-3 form-check">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="checkboxTermo"
+          required
+        />
+        <label class="form-check-label" for="checkboxTermo">
+          Concordo com os <a href="#">Termos e Condições</a>
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+
+    <script
+      defer
+      src="../assets/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    ></script>
+  </body>
+</html>
